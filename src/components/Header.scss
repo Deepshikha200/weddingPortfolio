@@ -1,0 +1,182 @@
+$baseColor : #EDB7AB;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  // overflow-x: hidden;
+}
+
+.nav-bar {
+  background-color: #f9f9f9;
+
+  .nav-link {
+    font-weight: bold;
+    text-decoration: none; // Optional
+    color: black; // Default color
+    position: relative; // Needed for the pseudo-element positioning
+    font-size: 18px;
+    margin: 0 10px; // Adjust as needed
+
+    // Transition effect for the underline
+    &:hover::after {
+      transform: scaleX(1); // Scale the underline to full width
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px; // Position the underline below the text
+      width: 100%;
+      height: 2px; // Thickness of the underline
+      background-color: #000; // Color of the underline
+      transform: scaleX(0); // Start with zero width
+      transform-origin: bottom left; // Anchor the transform to the right
+      transition: transform 0.3s ease; // Transition effect
+    }
+  }
+
+
+}
+
+.hero-section {
+  overflow: hidden; // Add this to prevent any overflow
+
+  .left {
+    background-color: #1D1D1D;
+    overflow-y: hidden; // Add this if needed
+
+    .heading-section {
+      margin-top: 4rem;
+      max-width: 850px;
+      overflow-y: hidden; // Ensure no overflow within the heading
+    }
+
+    .heading-description {
+      max-width: 850px;
+      margin-inline: auto;
+      margin-top: 3rem;
+    }
+  }
+
+  .right {
+    background-image: url("9E0A5571.jpg");
+    background-size: cover;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.portfolio-section {
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+
+  .services-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+
+    // For mobile devices, show only one item per row
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+}
+
+.gallery-container {
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+
+  .text-center {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .gallery-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+
+    .category-section {
+      text-align: center;
+
+      .category-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .images-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+
+        .image-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 8px;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Ensure the image covers the box
+            display: block;
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
