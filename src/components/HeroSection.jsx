@@ -19,6 +19,15 @@ const HeroSection = () => {
     });
   }, []);
 
+  // Inline style object
+  const rightStyle = {
+    backgroundImage: `url('9E0A5571.jpg')`,
+    backgroundSize: 'cover',
+    height: '650px',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  };
+
   return (
     <section className='hero-section d-flex' id='home'>
       <div className="container-fluid">
@@ -29,7 +38,7 @@ const HeroSection = () => {
               At Ved Diaries, we believe every moment of your wedding day deserves to be remembered. We capture the emotions, joy, and beauty of your special day, creating timeless memories that reflect your unique love story. Let us preserve your moments with elegance and authenticity.
             </p>
           </div>
-          <div className="col-md-8 col-12 right">
+          <div className="col-md-8 col-12 right" style={rightStyle}>
           </div>
         </div>
       </div>
