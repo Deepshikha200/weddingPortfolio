@@ -151,4 +151,23 @@
 }
 .gallery-container .gallery-grid .category-section .images-grid .image-item img:hover {
   transform: scale(1.05);
+}
+
+.footer {
+  height: auto;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-left ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.footer .footer-right ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.button {
+  background-color: #f9f9f9;
 }/*# sourceMappingURL=Header.css.map */
