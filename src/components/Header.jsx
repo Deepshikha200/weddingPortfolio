@@ -3,7 +3,7 @@ import './Header.scss';  // Ensure you're importing the SCSS file
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
-  const menuItems = ['Home', 'Portfolio', 'Services', 'Gallery', 'Contact'];
+  const menuItems = ['Home', 'Portfolio', 'Services', 'Gallery', 'Contact us'];
 
   return (
     <Navbar expand="lg" className='nav-bar'>

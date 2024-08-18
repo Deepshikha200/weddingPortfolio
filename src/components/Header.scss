@@ -11,6 +11,10 @@ $baseColor : #EDB7AB;
   // overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-bar {
   background-color: #f9f9f9;
 

@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import './Header.css';
 
-const Portofolio = () => {
+const Portofolio = ({ onScrollToSection }) => {
   const imageName = ['Wedding', 'Clubs', 'Events'];
   const images = ['9E0A0044.jpg', 'DSC02046.jpg', '1J2A9887.jpg'];
 
@@ -30,10 +30,9 @@ const Portofolio = () => {
                   sx={{ marginTop: '460px' }}
                   color="primary"
                   className="view-button"
+                  onClick={() => onScrollToSection(name.toLowerCase())}
                 >
-                  <a href={`#${imageName[index].toLowerCase()}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    View Full Portfolio
-                  </a>
+                  View Full Portfolio
                 </Button>
                 <h3 className='text-white' style={{ marginTop: '20px' }}>{name}</h3>
               </div>

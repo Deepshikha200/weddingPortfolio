@@ -1,7 +1,7 @@
-import React from 'react'
-import "./Header.css"
-const Gallery = () => {
+import React from 'react';
+import "./Header.css";
 
+const Gallery = ({ weddingRef, clubsRef, eventsRef }) => {
   const categories = {
     wedding: [
       '_ATP8950.jpg',
@@ -32,25 +32,43 @@ const Gallery = () => {
       '1J2A9573.jpg',
       '1J2A9816.jpg',
       '1J2A9887.jpg',
-
     ]
-  }
+  };
+
   return (
     <div className='gallery-container'>
       <h2 className='text-center' id='gallery'>~View Gallery~</h2>
       <div className='gallery-grid'>
-        {Object.entries(categories).map(([category, images], index) => (
-          <div className='category-section' key={index}>
-            <h3 className='category-title'>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
-            <div className='images-grid'>
-              {images.map((image, idx) => (
-                <div className='image-item' key={idx}>
-                  <img src={`${image}`} alt={`${category} ${idx}`} />
-                </div>
-              ))}
-            </div>
+        <div className='category-section' ref={weddingRef}>
+          <h3 className='category-title'>Wedding</h3>
+          <div className='images-grid'>
+            {categories.wedding.map((image, idx) => (
+              <div className='image-item' key={idx}>
+                <img src={`${image}`} alt={`wedding ${idx}`} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <div className='category-section' ref={clubsRef}>
+          <h3 className='category-title'>Clubs</h3>
+          <div className='images-grid'>
+            {categories.clubs.map((image, idx) => (
+              <div className='image-item' key={idx}>
+                <img src={`${image}`} alt={`clubs ${idx}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='category-section' ref={eventsRef}>
+          <h3 className='category-title'>Events</h3>
+          <div className='images-grid'>
+            {categories.events.map((image, idx) => (
+              <div className='image-item' key={idx}>
+                <img src={`${image}`} alt={`events ${idx}`} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
