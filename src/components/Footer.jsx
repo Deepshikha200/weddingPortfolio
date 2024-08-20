@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookSquare, FaYoutube, FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -79,13 +80,13 @@ const Footer = () => {
             </li>
             <li className='mb-3'>
               <Link
-                to="tel:6283482169"
+                to="mailto:lkumar7810@gmail.com"
                 className='d-flex align-items-center'
                 style={{ color: '#000', textDecoration: 'none' }}
               >
-                <FaPhoneAlt size={20} className='mt-1' />
+                <MdEmail size={36} className='mt-1' />
                 <div className='fs-6 ms-3 text-dark'>
-                  <span className='phone'>Deepshikha: 6283482169</span>
+                  <span className='phone'>Email Address: lkumar7810@gmail.com</span>
                 </div>
               </Link>
             </li>
