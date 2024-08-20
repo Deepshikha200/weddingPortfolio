@@ -20,8 +20,8 @@ const Footer = () => {
                 className='d-flex align-items-center'
                 style={{ color: '#FF6F05', textDecoration: 'none' }}
               >
-                <img src='insta.jpg' height="24px" width="24px" alt='Instagram' />
-                <span className='fs-5 ms-3 text-dark'>Instagram</span>
+                <img src='insta.jpg' height="22px" width="22px" alt='Instagram' />
+                <span className='fs-6 ms-3 text-dark'>Instagram</span>
               </Link>
             </li>
             <li className='mb-3'>
@@ -33,7 +33,7 @@ const Footer = () => {
                 style={{ color: '#E62117', textDecoration: 'none' }}
               >
                 <FaYoutube size={24} />
-                <span className='fs-5 ms-3 text-dark'>YouTube</span>
+                <span className='fs-6 ms-3 text-dark'>YouTube</span>
               </Link>
             </li>
             <li className='mb-3'>
@@ -45,7 +45,7 @@ const Footer = () => {
                 style={{ color: '#3B5998', textDecoration: 'none' }}
               >
                 <FaFacebookSquare size={24} />
-                <span className='fs-5 ms-3 text-dark'>Facebook</span>
+                <span className='fs-6 ms-3 text-dark'>Facebook</span>
               </Link>
             </li>
           </ul>
@@ -60,7 +60,7 @@ const Footer = () => {
                 className='d-flex align-items-center'
                 style={{ color: '#000', textDecoration: 'none' }}
               >
-                <FaPhoneAlt size={20} className='mt-1' />
+                <FaPhoneAlt size={17} className='mt-1' />
                 <div className='fs-6 ms-3 text-dark'>
                   <span className='phone'>Lucky: 9877260236</span>
                 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                 className='d-flex align-items-center'
                 style={{ color: '#000', textDecoration: 'none' }}
               >
-                <FaPhoneAlt size={20} className='mt-1' />
+                <FaPhoneAlt size={17} className='mt-1' />
                 <div className='fs-6 ms-3 text-dark'>
                   <span className='phone'>Aditya: 7528972377</span>
                 </div>
@@ -84,8 +84,8 @@ const Footer = () => {
                 className='d-flex align-items-center'
                 style={{ color: '#000', textDecoration: 'none' }}
               >
-                <MdEmail size={36} className='mt-1' />
-                <div className='fs-6 ms-3 text-dark'>
+                <MdEmail size={30} className='mt-1' />
+                <div className=' ms-3 text-dark'>
                   <span className='phone'>Email Address: lkumar7810@gmail.com</span>
                 </div>
               </Link>

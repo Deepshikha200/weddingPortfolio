@@ -32,9 +32,9 @@ const HeroSection = () => {
     <section className='hero-section d-flex' id='home'>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-4 col-12 left text-white text-center">
-            <h3 className="heading-section">Capturing Your Special Moments with Elegance and Passion</h3>
-            <p className='heading-description mb-5'>
+          <div className="col-md-4 col-12 left  text-center">
+            <h3 className="heading-section text-white">Capturing Your Special Moments with Elegance and Passion</h3>
+            <p className='heading-description mb-5' style={{ color: "#f9f9f9" }}>
               At Ved Diaries, we believe every moment of your wedding day deserves to be remembered. We capture the emotions, joy, and beauty of your special day, creating timeless memories that reflect your unique love story. Let us preserve your moments with elegance and authenticity.
             </p>
           </div>
