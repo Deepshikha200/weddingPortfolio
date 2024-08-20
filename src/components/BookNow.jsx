@@ -37,7 +37,7 @@ const BookNow = ({ show, onClose }) => {
             >
               <FaPhoneAlt size={18} className='mt-1' />
               <div className='fs-6 ms-3 text-dark'>
-                <span className='phone'>Aditya: 752897277</span>
+                <span className='phone'>Aditya: 7528972377</span>
               </div>
             </Link>
           </li>
