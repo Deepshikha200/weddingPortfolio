@@ -6,6 +6,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import React, { useRef } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import ScrollGallery from "./components/ScrollGallery";
 
 const App = () => {
   // Create refs for gallery sections
@@ -37,6 +38,7 @@ const App = () => {
         <HeroSection />
         <Portofolio onScrollToSection={handleScrollToSection} />
         <Services />
+        <ScrollGallery />
         <Gallery
           weddingRef={weddingRef}
           clubsRef={clubsRef}

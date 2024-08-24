@@ -181,4 +181,35 @@ html {
 
 .phone {
   font-size: 14px;
+}
+
+.insta_con {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.instagram_flex {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.instagram_scroll {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.instagram_scroll img {
+  max-width: 200px;
+  margin-right: 1rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }/*# sourceMappingURL=Header.css.map */
