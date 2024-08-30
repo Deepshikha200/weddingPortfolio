@@ -18,8 +18,8 @@ html {
   text-decoration: none;
   color: black;
   position: relative;
-  font-size: 18px;
-  margin: 0 10px;
+  font-size: 16px;
+  margin: 0 3px;
 }
 .nav-bar .nav-link:hover::after {
   transform: scaleX(1);

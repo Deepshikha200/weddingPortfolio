@@ -38,12 +38,12 @@ const App = () => {
         <HeroSection />
         <Portofolio onScrollToSection={handleScrollToSection} />
         <Services />
-        <ScrollGallery />
         <Gallery
           weddingRef={weddingRef}
           clubsRef={clubsRef}
           eventsRef={eventsRef}
         />
+        <ScrollGallery />
         <Footer />
       </BrowserRouter>
     </div>
