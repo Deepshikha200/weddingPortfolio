@@ -31,7 +31,7 @@ const Services = () => {
           ))}
         </div>
         <div className="text-center button p-2 pb-4 fs-2 mt-3">
-          <Button className='p-3' onClick={handleShowBookNow}>BOOK NOW</Button>
+          <Button className='p-2.6' onClick={handleShowBookNow}>BOOK NOW</Button>
         </div>
       </div>
 
