@@ -12,10 +12,10 @@ const BookNow = ({ show, onClose }) => {
   return (
     <Modal show={show} onHide={onClose}>
       <Modal.Header style={{ backgroundColor: "#0D6EFD", color: "#fff" }} closeButton>
-        <Modal.Title>Book an Appointment</Modal.Title>
+        <Modal.Title> <h5 className='text-center'>Book an Appointment</h5> </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className='mb-3'>Please call us or WhatsApp to book an appointment</div>
+        <div className='mb-3 fs-6'>Please call us or WhatsApp to book an appointment</div>
         <ul className='list-unstyled'>
           <li className='mb-3'>
             <Link

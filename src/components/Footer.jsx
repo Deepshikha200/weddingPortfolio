@@ -84,7 +84,7 @@ const Footer = () => {
                 className='d-flex align-items-center'
                 style={{ color: '#000', textDecoration: 'none' }}
               >
-                <MdEmail size={30} className='mt-1' />
+                <MdEmail size={25} className='mt-1' />
                 <div className=' ms-3 text-dark'>
                   <span className='phone'>Email Address: lkumar7810@gmail.com</span>
                 </div>

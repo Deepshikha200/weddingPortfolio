@@ -24,7 +24,7 @@ const images = [
 const ScrollGallery = () => {
   return (
     <section className="container insta_con">
-      <h2 className='text-center' id='gallery'>~View Gallery~</h2>
+      <h2 className='text-center' id=''>~View Gallery~</h2>
 
       <div className="instagram_flex">
         <div className="instagram_scroll">

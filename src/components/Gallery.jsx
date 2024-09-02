@@ -23,7 +23,7 @@ const Gallery = ({ weddingRef, clubsRef, eventsRef }) => {
       '9E0A8569.jpg',
       '9E0A8498.jpg',
       '9E0A8485.jpg',
-    
+
     ],
     events: [
       '1J2A0503.jpg',
@@ -36,7 +36,7 @@ const Gallery = ({ weddingRef, clubsRef, eventsRef }) => {
   };
 
   return (
-    <div className='gallery-container'>
+    <div className='gallery-container' id='gallery'>
       <div className='gallery-grid'>
         <div className='category-section' ref={weddingRef}>
           <h3 className='category-title'>Wedding</h3>
