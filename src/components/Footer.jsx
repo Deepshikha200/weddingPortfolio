@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className='container-fluid footer py-5' id='contact' style={{ backgroundColor: '#F5F5F5' }}>
+    <div className='container-fluid footer py-5' id='contact us' style={{ backgroundColor: '#F5F5F5' }}>
       <div className='row'>
 
         <div className="col-md-6 mb-4">
